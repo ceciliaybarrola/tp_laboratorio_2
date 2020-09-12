@@ -10,6 +10,9 @@ namespace Entidades
     {   
         private double numero;
 
+        /// <summary>
+        /// Setter del atributo numero, recibe un dato de tipo string, lo valida y lo asigna
+        /// </summary>
         public string SetNumero
         {           
             set { this.numero = this.ValidarNumero(value) ; }
@@ -61,27 +64,38 @@ namespace Entidades
             UInt64 numeroNatural;
 
             numeroNatural = (UInt64)Math.Abs(numero);
+            if (numeroNatural == 0){
+                retornoBinario = "0";
+            }              
 
-            while(numeroNatural >0)// no entro con el numero negativo
+            while (numeroNatural >0)
             {
-
-                if(numeroNatural % 2==0)
-                {
+                if(numeroNatural % 2==0){
                     retornoBinario = "0" + retornoBinario;
-                }
-                else
-                {
+
+                }else{
                     retornoBinario = "1" + retornoBinario;
+
                 }
                 numeroNatural = numeroNatural / 2;
             }
-
             return retornoBinario;
         }
+
+        /// <summary>
+        /// Valdida que la cadena recibida no este vacia y que sea un numero binario
+        /// </summary>
+        /// <param name="binario"></param>
+        /// <returns></returns>
         private bool EsBinario(string binario)
         {
             bool esBinario = true;
 
+            if(binario.Length == 0)
+            {
+                esBinario = false;
+            }
+    
             for(int i=0; i< binario.Length; i++)
             {
                 if(binario[i] != '0' && binario[i] != '1')
@@ -94,16 +108,29 @@ namespace Entidades
         }
 
         #region constructores
+
+
+        /// <summary>
+        /// Constructor por defecto
+        /// </summary>
         public Numero()
         {
             this.numero = 0;
         }
 
+        /// <summary>
+        /// Constructor parametrizado que asigan un dato de tipo double
+        /// </summary>
+        /// <param name="numero"></param>
         public Numero(double numero)
         {
             this.numero = numero;
         }
 
+        /// <summary>
+        /// Constructor parametrizado que recibe un string y lo settea
+        /// </summary>
+        /// <param name="strNumero"></param>
         public Numero(string strNumero)
         {
             this.SetNumero = strNumero;
@@ -111,22 +138,46 @@ namespace Entidades
         #endregion
 
         #region operadores
+        /// <summary>
+        /// Sobrecarga del operador menos, resta los atributos double de ambos objetos recibidos
+        /// </summary>
+        /// <param name="n1"></param>
+        /// <param name="n2"></param>
+        /// <returns></returns>
         public static double operator -(Numero n1, Numero n2)
         {
             return n1.numero - n2.numero;
         }
+        /// <summary>
+        /// Sobrecarga del operador más, suma los atributos double de ambos objetos recibidos
+        /// </summary>
+        /// <param name="n1"></param>
+        /// <param name="n2"></param>
+        /// <returns></returns>
         public static double operator +(Numero n1, Numero n2)
         {
             return n1.numero + n2.numero; ;
         }
+        /// <summary>
+        /// Sobrecarga del operador de multiplicacion, multiplica los atributos double de ambos objetos recibidos
+        /// </summary>
+        /// <param name="n1"></param>
+        /// <param name="n2"></param>
+        /// <returns></returns>
         public static double operator *(Numero n1, Numero n2)
         {
             return n1.numero * n2.numero;
         }
+        /// <summary>
+        /// Sobrecarga del operador dividir, divide los atributos double de ambos objetos recibidos
+        /// </summary>
+        /// <param name="n1"></param>
+        /// <param name="n2"></param>
+        /// <returns></returns> En caso del que el segundo operador sea 0, retorna double.MinValue
         public static double operator /(Numero n1, Numero n2)
         {
             double resultadoDivision = double.MinValue;
-            if(n2.numero != 0) //aca puedo hacer otro operador 
+            if(n2.numero != 0)
             {
                 resultadoDivision = n1.numero / n2.numero;
             }

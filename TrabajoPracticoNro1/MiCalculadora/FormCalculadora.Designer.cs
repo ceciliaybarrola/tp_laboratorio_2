@@ -122,9 +122,10 @@
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
-            this.lblResultado.Location = new System.Drawing.Point(20, 47);
+            this.lblResultado.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultado.Location = new System.Drawing.Point(19, 50);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(0, 13);
+            this.lblResultado.Size = new System.Drawing.Size(0, 19);
             this.lblResultado.TabIndex = 13;
             // 
             // FormCalculadora
