@@ -1,6 +1,0 @@
-C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro1\Entidades\bin\Debug\Entidades.dll
-C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro1\Entidades\bin\Debug\Entidades.pdb
-C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro1\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
-C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro1\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
-C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro1\Entidades\obj\Debug\Entidades.dll
-C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro1\Entidades\obj\Debug\Entidades.pdb
