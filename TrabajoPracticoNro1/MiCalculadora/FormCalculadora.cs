@@ -85,7 +85,7 @@ namespace MiCalculadora
             this.txtNumero1.Text = "";
             this.txtNumero2.Text = "";
             this.lblResultado.Text = "";
-            this.cmbOperador.Text = "";
+            this.cmbOperador.SelectedIndex = -1;
         }
 
         /// <summary>
