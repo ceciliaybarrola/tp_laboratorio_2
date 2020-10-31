@@ -1,0 +1,18 @@
+﻿CLASE: Laboratorio
+INSTRUCTOR: NOMBRE COMPLETO: Juarez, Roberto
+NACIONALIDAD: Argentino
+
+LEGAJO NUMERO: 2
+
+CLASES DEL DIA
+Laboratorio
+Legislacion
+NOMBRE COMPLETO: Suarez, Joaquin
+NACIONALIDAD: Extranjero
+
+LEGAJO NUMERO: 7
+
+ESTADO CUENTA: AlDia
+TOMA CLASE DE Laboratorio
+
+

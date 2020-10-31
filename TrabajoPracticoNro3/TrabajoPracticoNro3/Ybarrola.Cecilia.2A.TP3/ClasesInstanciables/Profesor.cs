@@ -13,8 +13,10 @@ namespace ClasesInstanciables
 
         private Queue<Universidad.EClases> clasesDelDia;
         private static Random random;
-        public Profesor()           
+        public Profesor() 
+            :base()
         {
+            this.clasesDelDia = new Queue<Universidad.EClases>();
         }
         static Profesor()
         {

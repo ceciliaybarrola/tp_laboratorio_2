@@ -12,27 +12,28 @@ namespace ClasesInstanciables
 {
     public class Universidad
     {
-        public enum EClases
-        {
-            Programacion,
-            Laboratorio,
-            Legislacion,
-            SPD
-        }
         private List<Alumno> alumnos;
         private List<Jornada> jornada;
         private List<Profesor> profesor;
-
+        /// <summary>
+        /// propiedad de lectrura y escritura del atributo alumnos
+        /// </summary>
         public List<Alumno> Alumnos
         {
             get { return this.alumnos; }
             set { this.alumnos = value; }
         }
+        /// <summary>
+        /// propiedad de lectrura y escritura del atributo jornada
+        /// </summary>
         public List<Jornada> Jornadas
         {
             get { return this.jornada; }
             set { this.jornada = value; }
         }
+        /// <summary>
+        /// propiedad de lectrura y escritura del atributo profesor
+        /// </summary>
         public List<Profesor> Instructores
         {
             get { return this.profesor; }
@@ -68,28 +69,40 @@ namespace ClasesInstanciables
                 }
             }
         }
+        /// <summary>
+        /// constructor por defecto 
+        /// </summary>
         public Universidad()
         {
             this.profesor = new List<Profesor>();
             this.jornada = new List<Jornada>();
             this.alumnos = new List<Alumno>();
         }
+        /// <summary>
+        /// Serializara los datos de la universidad en un archivo xml
+        /// </summary>
+        /// <param name="uni"></param>
+        /// <returns></returns>
         public static bool Guardar(Universidad uni)
         {
             Xml<Universidad> xml = new Xml<Universidad>();
             string ruta = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\UniversidadPrueba.xml";
-            return xml.Guardar(ruta, uni);
+            return xml.Guardar("Universidad.xml", uni);
 
         }
+        /// <summary>
+        /// Deserializará un archivo xml y convertira los datos en una universidad
+        /// </summary>
+        /// <returns></returns>
         public static Universidad Leer()
         {
             Universidad universidad = new Universidad();
             Xml<Universidad> xml = new Xml<Universidad>();
-            string ruta = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\UniversidadPrueba.xml";
+            string ruta = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\Universidad.xml";
             
             try
             {
-                xml.Leer(ruta, out universidad);
+                xml.Leer("Universidad.xml", out universidad);
             }
             catch(ArchivosException e)
             {
@@ -98,6 +111,11 @@ namespace ClasesInstanciables
             
             return universidad;
         }
+        /// <summary>
+        /// Mostrara todos los datos de la universidad
+        /// </summary>
+        /// <param name="uni"></param>
+        /// <returns></returns>
         private static string MostrarDatos(Universidad uni)
         {
             StringBuilder stringBuilder = new StringBuilder();
@@ -131,6 +149,7 @@ namespace ClasesInstanciables
                 if(a.Equals(item))
                 {
                     retorno = true;
+                    break;
                 }
             }
             return retorno;
@@ -209,9 +228,14 @@ namespace ClasesInstanciables
                     break;
                 }
             }
-
             return profesor;
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="u"></param>
+        /// <param name="a"></param>
+        /// <returns></returns>
         public static Universidad operator +(Universidad u, Alumno a)
         {
             if(u != a)
@@ -224,6 +248,12 @@ namespace ClasesInstanciables
             }
             return u;
         }
+        /// <summary>
+        /// Se agregara un profesor si el mismo no esta en la universidad
+        /// </summary>
+        /// <param name="u"></param>
+        /// <param name="i"></param>
+        /// <returns></returns>
         public static Universidad operator +(Universidad u, Profesor i)
         {
             if (u != i)
@@ -248,24 +278,28 @@ namespace ClasesInstanciables
 
             foreach (Alumno item in g.alumnos)
             {
-                if(item == clase)//chequear
-                {
-                    g.jornada[i] += item;
-                }
+                g.jornada[i] += item;
             }
 
             return g;
         }
-
+        /// <summary>
+        /// Hará publico los datos de launiversidad
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             return Universidad.MostrarDatos(this);
         }
-
-
-
-
-
-
+        /// <summary>
+        /// enumerado clases
+        /// </summary>
+        public enum EClases
+        {
+            Programacion,
+            Laboratorio,
+            Legislacion,
+            SPD
+        }
     }
 }

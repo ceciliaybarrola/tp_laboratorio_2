@@ -8,14 +8,29 @@ namespace Excepciones
 {
     public class ArchivosException : Exception
     {
+        /// <summary>
+        /// Constructor correspondiente al diagrama de clase, donde se recibe una excepcion como parametro
+        /// </summary>
+        /// <param name="innerException"></param>
         public ArchivosException(Exception innerException)
-            : base(innerException.Message)
+            : this("Se produjo un error en la lectura/escritura del archivo: "+innerException.Message)
         {
         }
+        /// <summary>
+        /// ATENCION!! constructor requerido segun las consignas del pdf del trabajo practico
+        /// </summary>
+        /// <param name="message"></param>
+        public ArchivosException(string message)
+            : base(message)
+        {
+        }
+        /// <summary>
+        /// ATENCION!! constructor requerido segun las consignas del pdf del trabajo practico
+        /// </summary>
+        /// <param name="message"></param>
         public ArchivosException()
-            : base()
+            : this("Se produjo un error en la lectura/escritura del archivo")
         {
         }
-
     }
 }

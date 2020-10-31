@@ -29,7 +29,6 @@ namespace UTest
             Alumno alumno= null;
             bool respuesta;
             //Act
-
             respuesta = profesor == alumno;
             //Assert
             Assert.IsFalse(respuesta);
@@ -37,23 +36,36 @@ namespace UTest
 
         [TestMethod]
         [ExpectedException(typeof(DniInvalidoException))]
-        public void VerificarDNIString_Fail()
+        public void VerificarDNIString_DNIInvalidoExcepcion()
         {
             //Arrange
-            Profesor profesor = new Profesor(1, "Juan", "Lopez", "43409999999999999999873",
-             ClasesAbstractas.Persona.ENacionalidad.Argentino);
+            Profesor profesor;
             //Act   
-
+            profesor = new Profesor(1, "Juan", "Lopez", "43409999999999999999873",
+                                    ClasesAbstractas.Persona.ENacionalidad.Argentino);
         }
-     /*   [TestMethod]
+        [TestMethod]
         [ExpectedException(typeof(NacionalidadInvalidaException))]
-        public void VerificarDNIString_notOk()
+        public void VerificarDNIString_NacionalidadInvalidaExcepcion()
         {
             //Arrange
             Profesor profesor = new Profesor();
             //Act
             profesor.Nacionalidad = ClasesAbstractas.Persona.ENacionalidad.Extranjero;
             profesor.StringToDNI = "4340873";
-        }*/
+        }
+        [TestMethod]
+        public void VerificarInstanciacionListaJornada()
+        {
+            //Arrange
+            Jornada jornada;
+            //Act
+            jornada = new Jornada(Universidad.EClases.Laboratorio, 
+                      new Profesor(1, "juana", "perez", "1000000", ClasesAbstractas.Persona.ENacionalidad.Argentino));
+            //Assert
+            Assert.IsNotNull(jornada.Alumnos);
+        }
+
+
     }
 }

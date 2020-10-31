@@ -13,26 +13,42 @@ namespace ClasesInstanciables
         private List<Alumno> alumnos;
         private Universidad.EClases clase;
         private Profesor instructor;
-
+        /// <summary>
+        /// propiedad de lectrura y escritura del atributo alumnos
+        /// </summary>
         public List<Alumno> Alumnos
         {
             get { return this.alumnos; }
             set { this.alumnos = value; }
         }
+        /// <summary>
+        /// propiedad de lectrura y escritura del atributo clase
+        /// </summary>
         public Universidad.EClases Clase
         {
             get { return this.clase; }
             set {  this.clase = value; }
         }
+        /// <summary>
+        /// propiedad de lectrura y escritura del atributo instructor
+        /// </summary>
         public Profesor Instructor
         {
             get { return this.instructor; }
             set { this.instructor = value; }
         }
+        /// <summary>
+        /// constructor por defecto
+        /// </summary>
         private Jornada()
         {
             this.alumnos = new List<Alumno>();
         }
+        /// <summary>
+        /// Constructor parametrizado
+        /// </summary>
+        /// <param name="clase"></param>
+        /// <param name="instructor"></param>
         public Jornada(Universidad.EClases clase, Profesor instructor)
             :this()
         {
@@ -49,7 +65,7 @@ namespace ClasesInstanciables
             string ruta = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\JornadaPrueba.txt";
             string datosArchivo;
 
-            archivoTexto.Leer(ruta, out datosArchivo);
+            archivoTexto.Leer("Jornada.txt", out datosArchivo);
 
             return datosArchivo;
         }
@@ -63,7 +79,7 @@ namespace ClasesInstanciables
             Texto archivoTexto = new Texto();
             string ruta = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\JornadaPrueba.txt";
 
-            return archivoTexto.Guardar(ruta, jornada.ToString());
+            return archivoTexto.Guardar("Jornada.txt", jornada.ToString());
         }
         /// <summary>
         /// ToString mostrará todos los datos de la Jornada.
@@ -92,15 +108,14 @@ namespace ClasesInstanciables
         public static bool operator ==(Jornada j, Alumno a)
         {
              bool retorno = false;
-
-             foreach(Alumno item in j.alumnos)
-             {
-                 if((a == item))
-                 {
-                     retorno = true;
-                     break;
-                 }
-             }          
+            foreach(Alumno item in j.alumnos)
+            {
+                if((a == item))
+                {
+                    retorno = true;
+                    break;
+                }
+            } 
              return retorno;
 
         }
@@ -123,7 +138,7 @@ namespace ClasesInstanciables
         /// <returns></returns>
         public static Jornada operator +(Jornada j, Alumno a)
         {
-            if (j != a)
+            if (j != a && a == j.clase)
             {
                 j.alumnos.Add(a);
             }

@@ -11,6 +11,12 @@ namespace Archivos
 {
     public class Xml<T> : IArchivo<T>
     {
+        /// <summary>
+        /// Implenetacion generica de la interfaz para guardar un archivo
+        /// </summary>
+        /// <param name="archivo"></param>
+        /// <param name="datos"></param>
+        /// <returns></returns> Retorna true si se pudo guardar, de lo contrario, false
         public bool Guardar(string archivo, T datos)
         {
             bool retorno = false;
@@ -29,6 +35,12 @@ namespace Archivos
             }
             return retorno;
         }
+        /// <summary>
+        /// Implenetacion generica de la interfaz para leer un archivo
+        /// </summary>
+        /// <param name="archivo"></param>
+        /// <param name="datos"></param>
+        /// <returns></returns> Retorna true si se pudo leer, de lo contrario, false
         public bool Leer(string archivo, out T datos)
         {
             bool retorno = false;

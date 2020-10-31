@@ -15,6 +15,7 @@ namespace ClasesInstanciables
         private EEstadoCuenta estadoCuenta;
 
         public Alumno()
+            :base()
         {
         }
         public Alumno(int id, string nombre, string apellido, string dni, ENacionalidad nacionalidad, Universidad.EClases claseQueToma)// chequear el estado cuenta por default

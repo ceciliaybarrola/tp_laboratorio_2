@@ -10,7 +10,12 @@ namespace Archivos
 {
     public class Texto : IArchivo<string>
     {
-
+        /// <summary>
+        /// Implenetacion de la interfaz para guardar un archivo, en este caso, de texto
+        /// </summary>
+        /// <param name="archivo"></param>
+        /// <param name="datos"></param> out donde saldra el string de la lectua del archivo
+        /// <returns></returns> Retorna true si se pudo guardar, de lo contrario, false
         public bool Guardar(string archivo, string datos)
         {
             bool retorno= false;
@@ -31,12 +36,16 @@ namespace Archivos
 
              return retorno;
         }
+        /// <summary>
+        /// Lee un archivo de texto en unaruta determinada y lo devuelve como un string
+        /// </summary>
+        /// <param name="archivo"></param>
+        /// <param name="datos"></param>
+        /// <returns></returns>
         public bool Leer(string archivo, out string datos)
         {
-            Console.WriteLine("SALALALAAA");
-            datos = default;
             bool retorno = false;
-          /*  Encoding miCodificacion = Encoding.UTF8;
+            Encoding miCodificacion = Encoding.UTF8;
 
             try
             {
@@ -50,7 +59,7 @@ namespace Archivos
             {
                 throw new ArchivosException(e);
             }
-*/
+
             return retorno;
         }
         

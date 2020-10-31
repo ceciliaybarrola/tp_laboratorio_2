@@ -15,8 +15,6 @@ namespace AppPruebaConsola
     {
         static void Main(string[] args)
         {
-
-/*
              Universidad uni = new Universidad();
              Alumno a1 = new Alumno(1, "Juan", "Lopez", "12234456",
              EntidadesAbstractas.Persona.ENacionalidad.Argentino, Universidad.EClases.Programacion,
@@ -65,6 +63,8 @@ namespace AppPruebaConsola
              EntidadesAbstractas.Persona.ENacionalidad.Argentino, Universidad.EClases.Legislacion,
              Alumno.EEstadoCuenta.AlDia);
              uni += a8;
+
+
              Profesor i1 = new Profesor(1, "Juan", "Lopez", "12224458",
              EntidadesAbstractas.Persona.ENacionalidad.Argentino);
              uni += i1;
@@ -97,7 +97,6 @@ namespace AppPruebaConsola
              }
              try
              {
-
                  uni += Universidad.EClases.SPD;
              }
              catch (SinProfesorException e)
@@ -109,7 +108,7 @@ namespace AppPruebaConsola
              Console.Clear();
              try
              {
-                   Universidad.Guardar(uni);
+                 Universidad.Guardar(uni);
                  Console.WriteLine("Archivo de Universidad guardado.");
 
              }
@@ -120,7 +119,7 @@ namespace AppPruebaConsola
              try
              {
                  int jornada = 0;
-                   Jornada.Guardar(uni[jornada]);
+                 Jornada.Guardar(uni[jornada]);
                  Console.WriteLine("Archivo de Jornada {0} guardado.", jornada);
                  //Console.WriteLine(Jornada.Leer());
              }
@@ -129,20 +128,6 @@ namespace AppPruebaConsola
                  Console.WriteLine(e.Message);
              }
              Console.ReadKey();
-*/
-
-             try{
-             Universidad unib = Universidad.Leer();
-             Console.WriteLine(unib.ToString());
-             }
-             catch (Exception e)
-             {
-                 Console.WriteLine(e.Message);
-             }
-
-            Console.ReadKey();
- 
-
         }
     }
 }

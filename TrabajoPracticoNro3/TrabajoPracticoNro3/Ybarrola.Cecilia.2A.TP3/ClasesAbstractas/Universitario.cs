@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
+using System.Xml;
+
 
 namespace ClasesAbstractas
 {
@@ -12,6 +15,7 @@ namespace ClasesAbstractas
         private int legajo;
 
         public Universitario()
+            :base()
         {
         }
         public Universitario(int legajo, string nombre, string apellido, string dni, ENacionalidad nacionalidad)
@@ -59,6 +63,12 @@ namespace ClasesAbstractas
             
             return retorno;
         }
+        /// <summary>
+        /// Dos Universitario serán distintos si y sólo si son no del mismo Tipo o si su Legajo o DNI no son iguales.
+        /// </summary>
+        /// <param name="pg1"></param>
+        /// <param name="pg2"></param>
+        /// <returns></returns>
         public static bool operator !=(Universitario pg1, Universitario pg2)
         {
             return !(pg1==pg2);
