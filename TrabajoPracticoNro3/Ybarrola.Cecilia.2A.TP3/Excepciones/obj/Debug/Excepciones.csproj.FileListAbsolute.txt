@@ -1,6 +1,0 @@
-C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro3\Ybarrola.Cecilia.2A.TP3\Excepciones\bin\Debug\Excepciones.dll
-C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro3\Ybarrola.Cecilia.2A.TP3\Excepciones\bin\Debug\Excepciones.pdb
-C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro3\Ybarrola.Cecilia.2A.TP3\Excepciones\obj\Debug\Excepciones.csprojAssemblyReference.cache
-C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro3\Ybarrola.Cecilia.2A.TP3\Excepciones\obj\Debug\Excepciones.csproj.CoreCompileInputs.cache
-C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro3\Ybarrola.Cecilia.2A.TP3\Excepciones\obj\Debug\Excepciones.dll
-C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro3\Ybarrola.Cecilia.2A.TP3\Excepciones\obj\Debug\Excepciones.pdb

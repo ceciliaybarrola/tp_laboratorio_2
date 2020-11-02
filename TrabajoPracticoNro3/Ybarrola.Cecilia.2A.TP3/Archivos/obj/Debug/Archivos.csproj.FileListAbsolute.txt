@@ -1,9 +1,0 @@
-C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro3\Ybarrola.Cecilia.2A.TP3\Archivos\bin\Debug\Archivos.dll
-C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro3\Ybarrola.Cecilia.2A.TP3\Archivos\bin\Debug\Archivos.pdb
-C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro3\Ybarrola.Cecilia.2A.TP3\Archivos\obj\Debug\Archivos.csproj.CoreCompileInputs.cache
-C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro3\Ybarrola.Cecilia.2A.TP3\Archivos\obj\Debug\Archivos.dll
-C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro3\Ybarrola.Cecilia.2A.TP3\Archivos\obj\Debug\Archivos.pdb
-C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro3\Ybarrola.Cecilia.2A.TP3\Archivos\obj\Debug\Archivos.csprojAssemblyReference.cache
-C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro3\Ybarrola.Cecilia.2A.TP3\Archivos\bin\Debug\Excepciones.dll
-C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro3\Ybarrola.Cecilia.2A.TP3\Archivos\bin\Debug\Excepciones.pdb
-C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro3\Ybarrola.Cecilia.2A.TP3\Archivos\obj\Debug\Archivos.csproj.CopyComplete
