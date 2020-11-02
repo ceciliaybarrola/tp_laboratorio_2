@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -14,18 +14,41 @@ namespace ClasesInstanciables
         private Universidad.EClases claseQueToma;
         private EEstadoCuenta estadoCuenta;
 
+        /// <summary>
+        /// constructor por defecto
+        /// </summary>
         public Alumno()
             :base()
         {
         }
-        public Alumno(int id, string nombre, string apellido, string dni, ENacionalidad nacionalidad, Universidad.EClases claseQueToma)// chequear el estado cuenta por default
-            : this(id, nombre, apellido, dni, nacionalidad, claseQueToma, EEstadoCuenta.AlDia)
-        {
-        }
-        public Alumno(int id, string nombre, string apellido, string dni, ENacionalidad nacionalidad, Universidad.EClases claseQueToma, EEstadoCuenta estadoCuenta)
-            : base(id, nombre, apellido, dni, nacionalidad)
+        /// <summary>
+        /// constructor parametrizado sin estado de cuenta como parametro
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="nombre"></param>
+        /// <param name="apellido"></param>
+        /// <param name="dni"></param>
+        /// <param name="nacionalidad"></param>
+        /// <param name="claseQueToma"></param>
+        public Alumno(int id, string nombre, string apellido, string dni, ENacionalidad nacionalidad, Universidad.EClases claseQueToma)
+             : base(id, nombre, apellido, dni, nacionalidad)
+           
         {
             this.claseQueToma = claseQueToma;
+        }
+        /// <summary>
+        /// constructor parametrizado con estado de cuenta como parametro incluido
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="nombre"></param>
+        /// <param name="apellido"></param>
+        /// <param name="dni"></param>
+        /// <param name="nacionalidad"></param>
+        /// <param name="claseQueToma"></param>
+        /// <param name="estadoCuenta"></param>
+        public Alumno(int id, string nombre, string apellido, string dni, ENacionalidad nacionalidad, Universidad.EClases claseQueToma, EEstadoCuenta estadoCuenta)
+            : this(id, nombre, apellido, dni, nacionalidad, claseQueToma)
+        {
             this.estadoCuenta = estadoCuenta;
         }
         /// <summary>
@@ -88,6 +111,9 @@ namespace ClasesInstanciables
         {
             return this.MostrarDatos();
         }
+        /// <summary>
+        /// enumerado estados de cuenta
+        /// </summary>
         public enum EEstadoCuenta
         {
             AlDia,

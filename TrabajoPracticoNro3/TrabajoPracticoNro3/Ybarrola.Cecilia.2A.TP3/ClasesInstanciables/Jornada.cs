@@ -62,7 +62,6 @@ namespace ClasesInstanciables
         public static string Leer()
         {
             Texto archivoTexto = new Texto();
-            string ruta = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\JornadaPrueba.txt";
             string datosArchivo;
 
             archivoTexto.Leer("Jornada.txt", out datosArchivo);
@@ -77,7 +76,6 @@ namespace ClasesInstanciables
         public static bool Guardar(Jornada jornada)
         {
             Texto archivoTexto = new Texto();
-            string ruta = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\JornadaPrueba.txt";
 
             return archivoTexto.Guardar("Jornada.txt", jornada.ToString());
         }
@@ -110,7 +108,7 @@ namespace ClasesInstanciables
              bool retorno = false;
             foreach(Alumno item in j.alumnos)
             {
-                if((a == item))
+                if(a == item)
                 {
                     retorno = true;
                     break;
@@ -132,6 +130,7 @@ namespace ClasesInstanciables
         /// <summary>
         /// Agregar Alumnos a la clase por medio del operador +, validando que no estén previamente
         /// cargados.
+        /// Hago la consulta sobre la clase para evitar que ingresen alumnos que no pertenezcan a esa cursada
         /// </summary>
         /// <param name="j"></param>
         /// <param name="a"></param>
@@ -144,9 +143,5 @@ namespace ClasesInstanciables
             }
             return j;
         }
-
-
-
-
     }
 }

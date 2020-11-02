@@ -13,15 +13,30 @@ namespace ClasesInstanciables
 
         private Queue<Universidad.EClases> clasesDelDia;
         private static Random random;
+
+        /// <summary>
+        /// constructor por defecto, instanciara la lista para evitar futuros errores
+        /// </summary>
         public Profesor() 
             :base()
         {
             this.clasesDelDia = new Queue<Universidad.EClases>();
         }
+        /// <summary>
+        /// constructor estatico que instanciara el random
+        /// </summary>
         static Profesor()
         {
             Profesor.random = new Random();           
         }
+        /// <summary>
+        /// constructor parametrizado
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="nombre"></param>
+        /// <param name="apellido"></param>
+        /// <param name="dni"></param>
+        /// <param name="nacionalidad"></param>
         public Profesor(int id, string nombre, string apellido, string dni, ENacionalidad nacionalidad)
             :base(id, nombre, apellido, dni, nacionalidad)
         {

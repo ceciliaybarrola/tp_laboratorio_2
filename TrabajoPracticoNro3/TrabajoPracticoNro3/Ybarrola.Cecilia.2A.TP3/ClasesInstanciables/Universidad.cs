@@ -16,7 +16,7 @@ namespace ClasesInstanciables
         private List<Jornada> jornada;
         private List<Profesor> profesor;
         /// <summary>
-        /// propiedad de lectrura y escritura del atributo alumnos
+        /// propiedad de lectura y escritura del atributo alumnos
         /// </summary>
         public List<Alumno> Alumnos
         {
@@ -24,7 +24,7 @@ namespace ClasesInstanciables
             set { this.alumnos = value; }
         }
         /// <summary>
-        /// propiedad de lectrura y escritura del atributo jornada
+        /// propiedad de lectura y escritura del atributo jornada
         /// </summary>
         public List<Jornada> Jornadas
         {
@@ -32,7 +32,7 @@ namespace ClasesInstanciables
             set { this.jornada = value; }
         }
         /// <summary>
-        /// propiedad de lectrura y escritura del atributo profesor
+        /// propiedad de lectura y escritura del atributo profesor
         /// </summary>
         public List<Profesor> Instructores
         {
@@ -86,7 +86,6 @@ namespace ClasesInstanciables
         public static bool Guardar(Universidad uni)
         {
             Xml<Universidad> xml = new Xml<Universidad>();
-            string ruta = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\UniversidadPrueba.xml";
             return xml.Guardar("Universidad.xml", uni);
 
         }
@@ -97,9 +96,7 @@ namespace ClasesInstanciables
         public static Universidad Leer()
         {
             Universidad universidad = new Universidad();
-            Xml<Universidad> xml = new Xml<Universidad>();
-            string ruta = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\Universidad.xml";
-            
+            Xml<Universidad> xml = new Xml<Universidad>();            
             try
             {
                 xml.Leer("Universidad.xml", out universidad);
@@ -120,9 +117,10 @@ namespace ClasesInstanciables
         {
             StringBuilder stringBuilder = new StringBuilder();
 
+            stringBuilder.AppendLine("JORNADA");
+
             for (int i=0; i < uni.jornada.Count; i++)
             {
-                stringBuilder.AppendLine("JORNADA");
                 stringBuilder.AppendFormat("CLASE DE {0} POR {1}\n\n", (uni.jornada[i]).Clase, ((uni.jornada[i]).Instructor).ToString());
                 stringBuilder.AppendLine("ALUMNOS");
                 foreach (Alumno item in (uni.jornada[i]).Alumnos)
@@ -231,7 +229,7 @@ namespace ClasesInstanciables
             return profesor;
         }
         /// <summary>
-        /// 
+        /// Agregara un alumno si este no pertenece a la universidad,sino tirara alumnoRepetidoException
         /// </summary>
         /// <param name="u"></param>
         /// <param name="a"></param>
@@ -278,13 +276,13 @@ namespace ClasesInstanciables
 
             foreach (Alumno item in g.alumnos)
             {
-                g.jornada[i] += item;
+                g[i] += item;
             }
 
             return g;
         }
         /// <summary>
-        /// Hará publico los datos de launiversidad
+        /// Hará publico los datos de la universidad
         /// </summary>
         /// <returns></returns>
         public override string ToString()

@@ -8,6 +8,9 @@ namespace UTest
     [TestClass]
     public class UnitTest1
     {
+        /// <summary>
+        /// Prueba de igualdad que debera devolver false ya que son de distinto tipo
+        /// </summary>
         [TestMethod]
         public void VerificarIgualdadUniversitarios_Fail()
         {
@@ -21,19 +24,9 @@ namespace UTest
             //Assert
             Assert.IsFalse(respuesta);
         }
-        [TestMethod]
-        public void VerificarIgualdadUniversitarios_Null()
-        {
-            //Arrange
-            Profesor profesor= null;
-            Alumno alumno= null;
-            bool respuesta;
-            //Act
-            respuesta = profesor == alumno;
-            //Assert
-            Assert.IsFalse(respuesta);
-        }
-
+        /// <summary>
+        /// Test que verifica el correcto lanzamiento de la excepcion DniInvalidoException
+        /// </summary>
         [TestMethod]
         [ExpectedException(typeof(DniInvalidoException))]
         public void VerificarDNIString_DNIInvalidoExcepcion()
@@ -44,6 +37,9 @@ namespace UTest
             profesor = new Profesor(1, "Juan", "Lopez", "43409999999999999999873",
                                     ClasesAbstractas.Persona.ENacionalidad.Argentino);
         }
+        /// <summary>
+        /// Test que verifica el correcto lanzamiento de la excepcion NacionalidadInvalidaException
+        /// </summary>
         [TestMethod]
         [ExpectedException(typeof(NacionalidadInvalidaException))]
         public void VerificarDNIString_NacionalidadInvalidaExcepcion()
@@ -54,6 +50,9 @@ namespace UTest
             profesor.Nacionalidad = ClasesAbstractas.Persona.ENacionalidad.Extranjero;
             profesor.StringToDNI = "4340873";
         }
+        /// <summary>
+        /// Test que verifica que se instancie correctamente la lista de alumnos de la clase jornada
+        /// </summary>
         [TestMethod]
         public void VerificarInstanciacionListaJornada()
         {
@@ -65,7 +64,5 @@ namespace UTest
             //Assert
             Assert.IsNotNull(jornada.Alumnos);
         }
-
-
     }
 }

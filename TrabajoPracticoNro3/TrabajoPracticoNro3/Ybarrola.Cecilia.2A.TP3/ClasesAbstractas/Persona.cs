@@ -19,21 +19,34 @@ namespace ClasesAbstractas
         private string nombre;
 
         #region Propiedades
+        /// <summary>
+        /// propiedad de lectura y escritura del apellido. Para settear debera pasar una validacion
+        /// </summary>
         public string Apellido
         {
             get { return this.apellido; }
             set { this.apellido = this.ValidarNombreApellido(value);}
         }
+        /// <summary>
+        /// propiedad de lectura y escritura del nombre. Para settear debera pasar una validacion
+        /// </summary>
         public string Nombre
         {
             get { return this.nombre; }
             set { this.nombre = this.ValidarNombreApellido(value); }
         }
+        /// <summary>
+        /// propiedad de lectura y escritura de la nacionalidad. 
+        /// </summary>
         public ENacionalidad Nacionalidad
         {
             get { return this.nacionalidad; }
             set { this.nacionalidad = value; }
         }
+        /// <summary>
+        /// propiedad de lectura y escritura de atributo dni,
+        /// los cuales deberan pasar una validacion
+        /// </summary>
         public int DNI
         {
             get { return this.dni; }
@@ -49,9 +62,18 @@ namespace ClasesAbstractas
         #endregion
 
         #region Constructores
+        /// <summary>
+        /// constructor por defecto de persona
+        /// </summary>
         public Persona()
         {
         }
+        /// <summary>
+        /// constructor parametrizado sin dni
+        /// </summary>
+        /// <param name="nombre"></param>
+        /// <param name="apellido"></param>
+        /// <param name="nacionalidad"></param>
         public Persona(string nombre, string apellido, ENacionalidad nacionalidad)
 
         {
@@ -59,11 +81,26 @@ namespace ClasesAbstractas
             this.Apellido = apellido;
             this.nacionalidad = nacionalidad;
         }
+        
+        /// <summary>
+        /// Constructor parametrizado con dni numerico
+        /// </summary>
+        /// <param name="nombre"></param>
+        /// <param name="apellido"></param>
+        /// <param name="dni"></param>
+        /// <param name="nacionalidad"></param>
         public Persona(string nombre, string apellido, int dni, ENacionalidad nacionalidad)
             : this(nombre, apellido, nacionalidad)
         {
             this.DNI = dni;
         }
+        /// <summary>
+        /// Constructor parametrizado con dni como string
+        /// </summary>
+        /// <param name="nombre"></param>
+        /// <param name="apellido"></param>
+        /// <param name="dni"></param>
+        /// <param name="nacionalidad"></param>
         public Persona(string nombre, string apellido, string dni, ENacionalidad nacionalidad)
             :this(nombre, apellido, nacionalidad)
         {
@@ -111,7 +148,7 @@ namespace ClasesAbstractas
         /// <returns></returns>
         private int ValidarDni(ENacionalidad nacionalidad, string dato)
         {     
-            int dni=0;
+            int dni;
             if(dato.Length <= 8 && int.TryParse(dato, out dni))
             {
                 this.DNI = dni;
@@ -132,7 +169,7 @@ namespace ClasesAbstractas
         private string ValidarNombreApellido(string dato)
         {
             string retorno = "";
-            if(dato!= null && dato.All(char.IsLetter))
+            if(dato != null && dato.All(char.IsLetter))
             {
                 retorno = dato;
             }
@@ -151,6 +188,9 @@ namespace ClasesAbstractas
 
             return stringBuilder.ToString();
         }
+        /// <summary>
+        /// enumerado nacionalidad
+        /// </summary>
         public enum ENacionalidad
         {
             Argentino,

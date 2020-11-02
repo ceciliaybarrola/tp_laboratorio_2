@@ -13,11 +13,21 @@ namespace ClasesAbstractas
     public abstract class Universitario : Persona
     {
         private int legajo;
-
+        /// <summary>
+        /// constructor por defecto
+        /// </summary>
         public Universitario()
-            :base()
+            : base()
         {
         }
+        /// <summary>
+        /// constructor parametrizado
+        /// </summary>
+        /// <param name="legajo"></param>
+        /// <param name="nombre"></param>
+        /// <param name="apellido"></param>
+        /// <param name="dni"></param>
+        /// <param name="nacionalidad"></param>
         public Universitario(int legajo, string nombre, string apellido, string dni, ENacionalidad nacionalidad)
             : base (nombre, apellido, dni, nacionalidad)
         {
@@ -53,12 +63,10 @@ namespace ClasesAbstractas
         public static bool operator ==(Universitario pg1, Universitario pg2)
         {
             bool retorno = false;
-            if((object)pg1 != null && (object)pg2!= null)
+
+            if(pg1.GetType() == pg2.GetType() && ( pg1.legajo == pg2.legajo || pg1.DNI == pg2.DNI))
             {
-                if(pg1.GetType() == pg2.GetType() &&   ( pg1.legajo == pg2.legajo || pg1.DNI == pg2.DNI))
-                {
-                    retorno = true;
-                }
+                retorno = true;
             }
             
             return retorno;
@@ -73,7 +81,11 @@ namespace ClasesAbstractas
         {
             return !(pg1==pg2);
         }
-
+        /// <summary>
+        /// sobrecarga del equals que reutilizara el == de universitario
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
         public override bool Equals(object obj)
         {
             bool retorno = false;
