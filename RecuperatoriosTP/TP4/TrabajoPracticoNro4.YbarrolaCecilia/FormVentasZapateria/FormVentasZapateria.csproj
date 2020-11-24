@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E02DF953-1CFA-4D04-A56A-AEB3B9019614}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FormVentasZapateria</RootNamespace>
+    <AssemblyName>FormVentasZapateria</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormAgregarCarrito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAgregarCarrito.Designer.cs">
+      <DependentUpon>FormAgregarCarrito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCrearZapato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCrearZapato.Designer.cs">
+      <DependentUpon>FormCrearZapato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAgregarProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAgregarProductos.Designer.cs">
+      <DependentUpon>FormAgregarProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCrearZapatilla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCrearZapatilla.Designer.cs">
+      <DependentUpon>FormCrearZapatilla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTicketera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTicketera.Designer.cs">
+      <DependentUpon>FormTicketera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioPrincipalZapateria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioPrincipalZapateria.Designer.cs">
+      <DependentUpon>FormularioPrincipalZapateria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAgregarCarrito.resx">
+      <DependentUpon>FormAgregarCarrito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAgregarProductos.resx">
+      <DependentUpon>FormAgregarProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCrearZapatilla.resx">
+      <DependentUpon>FormCrearZapatilla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCrearZapato.resx">
+      <DependentUpon>FormCrearZapato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTicketera.resx">
+      <DependentUpon>FormTicketera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioPrincipalZapateria.resx">
+      <DependentUpon>FormularioPrincipalZapateria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Archivos\Archivos.csproj">
+      <Project>{d1b4a98a-e163-42fc-9b9e-b5bce990b22b}</Project>
+      <Name>Archivos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Excepciones\Excepciones.csproj">
+      <Project>{6d9b50a1-0819-4cd5-8cda-f7a6e4de079f}</Project>
+      <Name>Excepciones</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocio\Negocio.csproj">
+      <Project>{92fb0cc3-52b6-490e-ac07-c3ef667fa9a9}</Project>
+      <Name>Negocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Productos\Productos.csproj">
+      <Project>{8cdab001-d159-40f6-8f1e-e6f772675d2a}</Project>
+      <Name>Productos</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

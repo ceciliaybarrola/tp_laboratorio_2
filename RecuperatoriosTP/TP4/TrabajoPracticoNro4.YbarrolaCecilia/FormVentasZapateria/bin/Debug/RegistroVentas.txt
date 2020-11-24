@@ -1,0 +1,168 @@
+﻿**************** ZAPATERIA Don Armando Shoes ****************
+Fecha de emision 22/11/2020 17:15:58
+Listado de productos:
+ZAPATILLA
+Nombre del calzado: adidas
+Material: 
+Precio por unidad: 8000
+Cantidad: 20
+
+Uso recomendado segun deporte: UsoCotidiano
+
+**************************************************************************
+
+**************** ZAPATERIA Don Armando Shoes ****************
+Fecha de emision 22/11/2020 17:17:38
+Listado de productos:
+ZAPATILLA
+Nombre del calzado: adidas
+Material: 
+Precio por unidad: 8000
+Cantidad: 20
+
+Uso recomendado segun deporte: UsoCotidiano
+
+**************************************************************************
+
+**************** ZAPATERIA Don Armando Shoes ****************
+Fecha de emision 22/11/2020 17:18:32
+Listado de productos:
+ZAPATILLA
+Nombre del calzado: adidas
+Material: 
+Precio por unidad: 8000
+Cantidad: 20
+
+Uso recomendado segun deporte: UsoCotidiano
+
+**************************************************************************
+
+**************** ZAPATERIA Don Armando Shoes ****************
+Fecha de emision 22/11/2020 17:19:09
+Listado de productos:
+ZAPATILLA
+Nombre del calzado: adidas
+Material: 
+Precio por unidad: 8000
+Cantidad: 30
+
+Uso recomendado segun deporte: UsoCotidiano
+
+**************************************************************************
+
+**************** ZAPATERIA Don Armando Shoes ****************
+Fecha de emision 22/11/2020 17:20:53
+Listado de productos:
+ZAPATILLA
+Nombre del calzado: adidas
+Material: 
+Precio por unidad: 8000
+Cantidad: 20
+
+Uso recomendado segun deporte: UsoCotidiano
+
+**************************************************************************
+
+**************** ZAPATERIA Don Armando Shoes ****************
+Fecha de emision 22/11/2020 17:21:47
+Listado de productos:
+ZAPATO
+Nombre del calzado: Loui vouitton
+Material: 
+Precio por unidad: 5000
+Cantidad: 3
+
+Tipo de taco: Stiletto
+
+**************************************************************************
+
+**************** ZAPATERIA Don Armando Shoes ****************
+Fecha de emision 22/11/2020 17:22:21
+Listado de productos:
+ZAPATILLA
+Nombre del calzado: adidas
+Material: 
+Precio por unidad: 8000
+Cantidad: 10
+
+Uso recomendado segun deporte: UsoCotidiano
+
+**************************************************************************
+
+**************** ZAPATERIA Don Armando Shoes ****************
+Fecha de emision 22/11/2020 17:26:17
+Listado de productos:
+ZAPATILLA
+Nombre del calzado: adidas
+Material: Tela
+Precio por unidad: 8000
+Cantidad: 20
+
+Uso recomendado segun deporte: UsoCotidiano
+
+**************************************************************************
+
+**************** ZAPATERIA Don Armando Shoes ****************
+Fecha de emision 22/11/2020 23:09:59
+Listado de productos:
+**************************************************************************
+
+**************** ZAPATERIA Don Armando Shoes ****************
+Fecha de emision 22/11/2020 23:11:06
+Listado de productos:
+ZAPATILLA
+Nombre del calzado: cecy
+Material: Otro
+Precio por unidad: 2000
+Cantidad: 5
+
+Uso recomendado segun deporte: UsoCotidiano
+
+ZAPATILLA
+Nombre del calzado: adidas
+Material: Tela
+Precio por unidad: 8010
+Cantidad: 3
+
+Uso recomendado segun deporte: UsoCotidiano
+
+**************************************************************************
+
+**************** ZAPATERIA Don Armando Shoes ****************
+Fecha de emision 24/11/2020 14:37:00
+Listado de productos:
+ZAPATILLA
+Nombre del calzado: cecy
+Material: Otro
+Precio por unidad: 2000
+Cantidad: 1
+
+Uso recomendado segun deporte: UsoCotidiano
+
+**************************************************************************
+
+**************** ZAPATERIA Don Armando Shoes ****************
+Fecha de emision 24/11/2020 14:37:43
+Listado de productos:
+**************************************************************************
+
+**************** ZAPATERIA Don Armando Shoes ****************
+Fecha de emision 24/11/2020 14:37:45
+Listado de productos:
+**************************************************************************
+
+**************** ZAPATERIA Don Armando Shoes ****************
+Fecha de emision 24/11/2020 14:37:45
+Listado de productos:
+**************************************************************************
+
+**************** ZAPATERIA Don Armando Shoes ****************
+Fecha de emision 24/11/2020 14:37:45
+Listado de productos:
+**************************************************************************
+
+**************** ZAPATERIA Don Armando Shoes ****************
+Fecha de emision 24/11/2020 14:37:46
+Listado de productos:
+**************************************************************************
+
