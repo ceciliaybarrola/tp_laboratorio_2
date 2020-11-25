@@ -1,0 +1,15 @@
+﻿
+**************** ZAPATERIA Don Armando Shoes ****************
+Fecha de emision 24/11/2020 19:38:16
+Listado de productos:
+ZAPATO
+Nombre del calzado: dadaaaa
+Material: Otro
+Precio por unidad: 3000
+Cantidad: 2
+
+Tipo de taco: Cuña
+
+PRECIO TOTAL ------------> 6000
+**************************************************************************
+

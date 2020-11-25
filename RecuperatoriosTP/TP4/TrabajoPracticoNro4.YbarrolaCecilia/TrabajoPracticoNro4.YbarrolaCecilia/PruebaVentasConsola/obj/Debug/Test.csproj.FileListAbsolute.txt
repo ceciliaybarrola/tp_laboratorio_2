@@ -1,0 +1,7 @@
+C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\PruebaVentasConsola\bin\Debug\PruebaVentasConsola.exe.config
+C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\PruebaVentasConsola\bin\Debug\PruebaVentasConsola.exe
+C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\PruebaVentasConsola\bin\Debug\PruebaVentasConsola.pdb
+C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\PruebaVentasConsola\obj\Debug\Test.csprojAssemblyReference.cache
+C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\PruebaVentasConsola\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\PruebaVentasConsola\obj\Debug\PruebaVentasConsola.exe
+C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\PruebaVentasConsola\obj\Debug\PruebaVentasConsola.pdb
