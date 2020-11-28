@@ -12,6 +12,10 @@ namespace FormVentasZapateria
 {
     public partial class FormTicketera : Form
     {
+        /// <summary>
+        /// form donde se mostraran los registros de los tickets
+        /// </summary>
+        /// <param name="tickets"></param>
         public FormTicketera(string tickets)
         {
             InitializeComponent();

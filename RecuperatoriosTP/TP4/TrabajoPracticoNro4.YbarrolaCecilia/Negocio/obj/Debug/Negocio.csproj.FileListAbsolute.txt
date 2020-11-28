@@ -12,3 +12,5 @@ C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNr
 C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\Negocio\obj\Debug\Negocio.csproj.CopyComplete
 C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\Negocio\obj\Debug\Negocio.dll
 C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\Negocio\obj\Debug\Negocio.pdb
+C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\Negocio\bin\Debug\MetodosDeExtension.dll
+C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\Negocio\bin\Debug\MetodosDeExtension.pdb

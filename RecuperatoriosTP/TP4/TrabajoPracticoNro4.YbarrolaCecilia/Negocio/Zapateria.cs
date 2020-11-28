@@ -6,37 +6,62 @@ using System.Threading.Tasks;
 using Productos;
 using Archivos;
 using Excepciones;
+using System.Xml.Serialization;
+using System.Xml;
 
 namespace Negocio
 {
+    /// <summary>
+    /// Negocio de zapatos.
+    /// </summary>
+    [XmlInclude(typeof(Zapatilla))]
+    [XmlInclude(typeof(Zapato))]
+    [XmlInclude(typeof(Calzado))]
+    [XmlInclude(typeof(Zapateria))]
     public class Zapateria
     {
         public List<Calzado> stock;
         public List<Calzado> ventas;
         public float gananciaDelDia;
         public string nombreZapateria;
-
+        /// <summary>
+        /// Constructor por defecto encargado de instanciar las listas
+        /// </summary>
         public Zapateria()
         {
             this.stock = new List<Calzado>();
             this.ventas = new List<Calzado>();
         }
+        /// <summary>
+        /// constructor parametrizado que recibe como parametro el nombre de la zapateria
+        /// </summary>
+        /// <param name="nombreZapateria"></param>
         public Zapateria(string nombreZapateria)
             :this()
         {
             this.gananciaDelDia = 0;
             this.nombreZapateria = nombreZapateria;
         }
+        /// <summary>
+        /// metodo enargado de calcular la ganancia teniendo en cuenta que se 
+        /// gana el %20 del precio del producto
+        /// </summary>
+        /// <returns></returns>
         public float BalanceDelDia()
         {
             float balance = 0;
             foreach(Calzado item in this.ventas)
             {
-                balance += (item.Precio * 20) / 100;
+                balance += ((item.Precio * 20) / 100);
             }
 
             return balance;
         }
+        /// <summary>
+        /// Se encarga de serializar una zapateria a xml
+        /// </summary>
+        /// <param name="zapateria"></param>
+        /// <returns></returns>
         public static bool Guardar(Zapateria zapateria)
         {
             Xml<Zapateria> xml = new Xml<Zapateria>();
@@ -61,6 +86,10 @@ namespace Negocio
             }
             return zapateria;
         }
+        /// <summary>
+        /// lee el archivo de tickets
+        /// </summary>
+        /// <returns></returns>
         public static string LeerTicketera()
         {
             string ticketVentas="";
@@ -75,6 +104,11 @@ namespace Negocio
             }
             return ticketVentas;
         }
+        /// <summary>
+        /// Escribe el archivo de ventas
+        /// </summary>
+        /// <param name="ventas"></param> lista de ventas a escribir
+        /// <returns></returns>
         public string EscribirTicketera(List<Calzado> ventas)
         {
             string ticketVentas = Zapateria.EscribirTicket(ventas, this);
@@ -89,9 +123,16 @@ namespace Negocio
             }
             return ticketVentas;
         }
+        /// <summary>
+        /// Se encarga de darle el formato al ticket segun la lista que reciba y la zapateria recibida como parametro
+        /// </summary>
+        /// <param name="ventas"></param>
+        /// <param name="zapateria"></param>
+        /// <returns></returns>
         public static string EscribirTicket(List<Calzado> ventas, Zapateria zapateria)
         {
             StringBuilder stringBuilder = new StringBuilder();
+            float precioTotal = 0;
 
             stringBuilder.AppendFormat("**************** ZAPATERIA {0} ****************\n", zapateria.nombreZapateria);
             stringBuilder.AppendFormat("Fecha de emision {0}\n", DateTime.Now);
@@ -99,15 +140,19 @@ namespace Negocio
             foreach(Calzado item in ventas)
             {
                 stringBuilder.AppendLine(item.ToString());
+                precioTotal += item.Precio * item.Cantidad;
             }
-
-            ///poner el costo total
-
+            stringBuilder.AppendLine("PRECIO TOTAL ------------> "+ precioTotal);
             stringBuilder.AppendLine("**************************************************************************");
             
             return stringBuilder.ToString();
         }
-
+        /// <summary>
+        /// una zapateria sera igual a un calzado si el mismo se encuentra en su stock
+        /// </summary>
+        /// <param name="zapateria"></param>
+        /// <param name="calzado"></param>
+        /// <returns></returns>
         public static bool operator ==(Zapateria zapateria , Calzado calzado)
         {
             bool retorno = false;
@@ -122,58 +167,15 @@ namespace Negocio
             }
             return retorno;
         }
+        /// <summary>
+        /// una zapateria sera distinta a un calzado cuando el mismo no este dentro de la lista
+        /// </summary>
+        /// <param name="zapateria"></param>
+        /// <param name="calzado"></param>
+        /// <returns></returns>
         public static bool operator !=(Zapateria zapateria, Calzado calzado)
         {
             return !(zapateria==calzado);
         }
-        /// <summary>
-        /// Busca un calzado determinado en una zapateria 
-        /// (segun el criterio de igualdad de esta clase) 
-        /// y devuelve la posicion en la que e encuentra
-        /// </summary>
-        /// <param name="calzado"></param>
-        /// <param name="posicion"></param>
-        /// <returns></returns> True si se lo encontro, false de lo contrario
-        public bool ObtenerCalzado(Calzado calzado, out int posicion)
-        {
-            bool retorno = false;
-            posicion = -1;
-            for(int i = 0; i < this.stock.Count; i++)
-            {
-                if (calzado.Equals(this.stock[i]))
-                {
-                    posicion = i;
-                    retorno = true;
-                    break;
-                }
-            }
-            return retorno;
-        }
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="zapateria"></param>
-        /// <param name="calzado"></param>
-        /// <returns></returns> Retona true si el calzado no existia y se agrego a la lista. 
-        /// Retorna False si el calzado ya existia y se increento el inventario de este
-        public static Zapateria operator +(Zapateria zapateria, Calzado calzado)
-        {
-            bool retorno = false;
-            int posicionCalzado;
-
-            if(zapateria.ObtenerCalzado(calzado, out posicionCalzado))
-            {
-                (zapateria.stock[posicionCalzado]).Cantidad += calzado.Cantidad;
-            }
-            else
-            {
-                zapateria.stock.Add(calzado);
-                retorno = true;
-            }
-            return zapateria;
-        }
-
-
-
     }
 }

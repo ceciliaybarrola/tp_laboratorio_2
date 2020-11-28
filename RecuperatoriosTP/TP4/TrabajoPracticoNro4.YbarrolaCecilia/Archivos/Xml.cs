@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 using Excepciones;
 using System.Xml.Serialization;
 using System.Xml;
+using Productos;
 
 namespace Archivos
 {
+
     public class Xml <T> :IArchivo<T>
     {
         /// <summary>

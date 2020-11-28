@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace Archivos
 {
+    /// <summary>
+    /// INTERFAZ
+    /// Crea las firmas para leer y guardar un archivo
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public interface IArchivo<T>
     {
         /// <summary>

@@ -37,13 +37,13 @@
             this.Salir = new System.Windows.Forms.Button();
             this.GuardarCambios = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.CancelarCompra = new System.Windows.Forms.Button();
+            this.AñadirAlCarro = new System.Windows.Forms.Button();
             this.labelVentas = new System.Windows.Forms.Label();
             this.labelGanancias = new System.Windows.Forms.Label();
             this.Ticket = new System.Windows.Forms.Button();
             this.Venta = new System.Windows.Forms.Button();
-            this.AñadirAlCarro = new System.Windows.Forms.Button();
             this.rtbListaChanguito = new System.Windows.Forms.RichTextBox();
-            this.CancelarCompra = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDataTable)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -53,7 +53,9 @@
             // 
             this.dataGridViewDataTable.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridViewDataTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDataTable.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dataGridViewDataTable.Location = new System.Drawing.Point(489, 1);
+            this.dataGridViewDataTable.MultiSelect = false;
             this.dataGridViewDataTable.Name = "dataGridViewDataTable";
             this.dataGridViewDataTable.Size = new System.Drawing.Size(409, 501);
             this.dataGridViewDataTable.TabIndex = 0;
@@ -142,7 +144,7 @@
             this.GuardarCambios.Name = "GuardarCambios";
             this.GuardarCambios.Size = new System.Drawing.Size(212, 32);
             this.GuardarCambios.TabIndex = 7;
-            this.GuardarCambios.Text = "Guardar Cambios";
+            this.GuardarCambios.Text = "Guardar zapateria XML";
             this.GuardarCambios.UseVisualStyleBackColor = false;
             this.GuardarCambios.Click += new System.EventHandler(this.GuardarCambios_Click);
             // 
@@ -163,6 +165,30 @@
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Ventas";
+            // 
+            // CancelarCompra
+            // 
+            this.CancelarCompra.BackColor = System.Drawing.Color.LightPink;
+            this.CancelarCompra.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.CancelarCompra.Location = new System.Drawing.Point(6, 80);
+            this.CancelarCompra.Name = "CancelarCompra";
+            this.CancelarCompra.Size = new System.Drawing.Size(96, 27);
+            this.CancelarCompra.TabIndex = 5;
+            this.CancelarCompra.Text = "Cancelar compra";
+            this.CancelarCompra.UseVisualStyleBackColor = false;
+            this.CancelarCompra.Click += new System.EventHandler(this.CancelarCompra_Click);
+            // 
+            // AñadirAlCarro
+            // 
+            this.AñadirAlCarro.BackColor = System.Drawing.Color.LightPink;
+            this.AñadirAlCarro.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.AñadirAlCarro.Location = new System.Drawing.Point(6, 50);
+            this.AñadirAlCarro.Name = "AñadirAlCarro";
+            this.AñadirAlCarro.Size = new System.Drawing.Size(96, 27);
+            this.AñadirAlCarro.TabIndex = 4;
+            this.AñadirAlCarro.Text = "Añadir al carro";
+            this.AñadirAlCarro.UseVisualStyleBackColor = false;
+            this.AñadirAlCarro.Click += new System.EventHandler(this.AñadirAlCarro_Click);
             // 
             // labelVentas
             // 
@@ -196,7 +222,7 @@
             this.Ticket.Name = "Ticket";
             this.Ticket.Size = new System.Drawing.Size(96, 88);
             this.Ticket.TabIndex = 1;
-            this.Ticket.Text = "Mostrar tickets del dia";
+            this.Ticket.Text = "Mostrar los registros de ventas";
             this.Ticket.UseVisualStyleBackColor = false;
             this.Ticket.Click += new System.EventHandler(this.Ticket_Click);
             // 
@@ -212,18 +238,6 @@
             this.Venta.UseVisualStyleBackColor = false;
             this.Venta.Click += new System.EventHandler(this.Venta_Click);
             // 
-            // AñadirAlCarro
-            // 
-            this.AñadirAlCarro.BackColor = System.Drawing.Color.LightPink;
-            this.AñadirAlCarro.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.AñadirAlCarro.Location = new System.Drawing.Point(6, 50);
-            this.AñadirAlCarro.Name = "AñadirAlCarro";
-            this.AñadirAlCarro.Size = new System.Drawing.Size(96, 27);
-            this.AñadirAlCarro.TabIndex = 4;
-            this.AñadirAlCarro.Text = "Añadir al carro";
-            this.AñadirAlCarro.UseVisualStyleBackColor = false;
-            this.AñadirAlCarro.Click += new System.EventHandler(this.AñadirAlCarro_Click);
-            // 
             // rtbListaChanguito
             // 
             this.rtbListaChanguito.Location = new System.Drawing.Point(18, 64);
@@ -232,18 +246,6 @@
             this.rtbListaChanguito.Size = new System.Drawing.Size(444, 172);
             this.rtbListaChanguito.TabIndex = 9;
             this.rtbListaChanguito.Text = "";
-            // 
-            // CancelarCompra
-            // 
-            this.CancelarCompra.BackColor = System.Drawing.Color.LightPink;
-            this.CancelarCompra.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.CancelarCompra.Location = new System.Drawing.Point(6, 80);
-            this.CancelarCompra.Name = "CancelarCompra";
-            this.CancelarCompra.Size = new System.Drawing.Size(96, 27);
-            this.CancelarCompra.TabIndex = 5;
-            this.CancelarCompra.Text = "Cancelar compra";
-            this.CancelarCompra.UseVisualStyleBackColor = false;
-            this.CancelarCompra.Click += new System.EventHandler(this.CancelarCompra_Click);
             // 
             // FormularioPrincipalZapateria
             // 
@@ -258,8 +260,11 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.labelTitulo);
             this.Controls.Add(this.dataGridViewDataTable);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FormularioPrincipalZapateria";
-            this.Text = "Form1";
+            this.Text = "Ventas zapateria | TP4 Ybarrola Cecilia";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormVentasZapateria_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDataTable)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);

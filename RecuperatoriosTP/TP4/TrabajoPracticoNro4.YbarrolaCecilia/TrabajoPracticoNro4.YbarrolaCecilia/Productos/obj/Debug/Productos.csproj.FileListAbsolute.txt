@@ -1,9 +1,0 @@
-C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\Productos\bin\Debug\Productos.dll
-C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\Productos\bin\Debug\Productos.pdb
-C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\Productos\bin\Debug\Excepciones.dll
-C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\Productos\bin\Debug\Excepciones.pdb
-C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\Productos\obj\Debug\Productos.csprojAssemblyReference.cache
-C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\Productos\obj\Debug\Productos.csproj.CoreCompileInputs.cache
-C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\Productos\obj\Debug\Productos.csproj.CopyComplete
-C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\Productos\obj\Debug\Productos.dll
-C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\Productos\obj\Debug\Productos.pdb

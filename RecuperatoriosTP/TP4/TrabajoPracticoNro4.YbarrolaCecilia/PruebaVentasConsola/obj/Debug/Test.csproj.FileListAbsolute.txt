@@ -5,3 +5,15 @@ C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNr
 C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\PruebaVentasConsola\obj\Debug\Test.csproj.CoreCompileInputs.cache
 C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\PruebaVentasConsola\obj\Debug\PruebaVentasConsola.exe
 C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\PruebaVentasConsola\obj\Debug\PruebaVentasConsola.pdb
+C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\PruebaVentasConsola\bin\Debug\Archivos.dll
+C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\PruebaVentasConsola\bin\Debug\Excepciones.dll
+C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\PruebaVentasConsola\bin\Debug\MetodosDeExtension.dll
+C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\PruebaVentasConsola\bin\Debug\Negocio.dll
+C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\PruebaVentasConsola\bin\Debug\Productos.dll
+C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\PruebaVentasConsola\bin\Debug\Archivos.pdb
+C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\PruebaVentasConsola\bin\Debug\Archivos.dll.config
+C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\PruebaVentasConsola\bin\Debug\Excepciones.pdb
+C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\PruebaVentasConsola\bin\Debug\MetodosDeExtension.pdb
+C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\PruebaVentasConsola\bin\Debug\Negocio.pdb
+C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\PruebaVentasConsola\bin\Debug\Productos.pdb
+C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\PruebaVentasConsola\obj\Debug\Test.csproj.CopyComplete

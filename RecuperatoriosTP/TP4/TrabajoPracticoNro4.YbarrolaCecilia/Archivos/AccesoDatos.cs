@@ -9,6 +9,11 @@ using Productos;
 
 namespace Archivos
 {
+    /// <summary>
+    /// USO DATA BASE
+    /// clase estatica AccesoDatos que se encarga de manejar la gran mayoria de las 
+    /// interacciones con la base de datos
+    /// </summary>
     public static class AccesoDatos
     {
         #region Atributos
@@ -17,18 +22,23 @@ namespace Archivos
         public static SqlCommand comando;
 
         #endregion
-
         #region Constructor
+        /// <summary>
+        /// constructor estatico del 
+        /// </summary>
         static AccesoDatos()
         {
             AccesoDatos.conexion = new SqlConnection(Properties.Settings.Default.coneccionStockZapateriaDB);
         }
 
         #endregion
-
         #region Métodos
 
         #region Getters
+        /// <summary>
+        /// obtiene los elementos de la base de datos y los agrega a una lista de calzados
+        /// </summary>
+        /// <returns></returns>
         public static List<Calzado> ObtenerListaCalzados()
         {
             List<Calzado> lista = new List<Calzado>();
@@ -70,7 +80,10 @@ namespace Archivos
 
             return lista;
         }
-
+        /// <summary>
+        /// obtiene los elementos de la base de datos y los agrega a una datatable
+        /// </summary>
+        /// <returns></returns>
         public static DataTable ObtenerTablaCalzado()
         {
             DataTable tabla = new DataTable("StockZapateria");
@@ -89,10 +102,6 @@ namespace Archivos
 
                 dataReader.Close();
             }
-            catch (Exception ex)
-            {
-                //Console.WriteLine(ex.ToString());
-            }
             finally
             {
                 if (AccesoDatos.conexion.State == ConnectionState.Open)
@@ -103,12 +112,14 @@ namespace Archivos
 
             return tabla;
         }
-
+        /// <summary>
+        /// hace un select de la base de datos por id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public static Calzado ObtenerCalzadoPorID(int id)
         {
-            Zapatilla zapatilla=new Zapatilla ();
-            Zapato zapato= new Zapato();
-            bool esZapatilla= false;
+            Calzado calzado= null;
 
             try
             {
@@ -124,24 +135,16 @@ namespace Archivos
 
                 if(dataReader.Read())
                 {
-                    if(dataReader.IsDBNull(6))
+                    if(dataReader.IsDBNull(6))//Si no existe el atributo uso recomendado es zapato
                     {
-                        zapato = new Zapato(dataReader.GetString(5), dataReader.GetInt32(1), (float)(dataReader.GetDouble(2)), dataReader.GetString(3), dataReader.GetString(4));
+                        calzado = new Zapato(dataReader.GetInt32(0), dataReader.GetString(5), dataReader.GetInt32(1), (float)(dataReader.GetDouble(2)), dataReader.GetString(3), dataReader.GetString(4));
                     }
-                    else if (dataReader.IsDBNull(5))//Si no existe el atributo tipo de taco 
+                    else if (dataReader.IsDBNull(5))//Si no existe el atributo tipo de taco es zapatilla
                     {
-                        zapatilla = new Zapatilla(dataReader.GetInt32(0), dataReader.GetString(6), dataReader.GetInt32(1), (float)(dataReader.GetDouble(2)), dataReader.GetString(3), dataReader.GetString(4));
-                        esZapatilla = true;
+                        calzado = new Zapatilla(dataReader.GetInt32(0), dataReader.GetString(6), dataReader.GetInt32(1), (float)(dataReader.GetDouble(2)), dataReader.GetString(3), dataReader.GetString(4));
                     }
                 }
-
-
                 dataReader.Close();
-            }
-
-            catch (Exception e )
-            {
-                Console.WriteLine(e.Message);
             }
             finally
             {
@@ -150,23 +153,22 @@ namespace Archivos
                     AccesoDatos.conexion.Close();
                 }
             }
-            if (esZapatilla)
-            {
-                return zapatilla;
-            }
-            else
-            {
-                return zapato;
-            }
+
+            return calzado;
 ;
         }
 
         #endregion
 
         #region Insertar Calzado
+        /// <summary>
+        /// inserta un calzado en la base de datos
+        /// </summary>
+        /// <param name="calzado"></param>
+        /// <returns></returns>
         public static bool InsertarCalzado(Calzado calzado)
         {
-            bool todoOk = false;
+            bool retorno;
             string sql;
             try
             {
@@ -177,62 +179,79 @@ namespace Archivos
                 if (calzado is Zapato)
                 {
                     sql = " INSERT INTO StockZapateria(cantidad, precio, nombre, material ,tipoDeTaco) VALUES(@cantidad, @precio, @nombre, @material, @tipoDeTaco);";
-                    todoOk = calzado.ComandoSQL(sql, AccesoDatos.conexion, AccesoDatos.comando);             
+                    retorno = calzado.ComandoSQL(sql, AccesoDatos.conexion, AccesoDatos.comando);             
                 }
                 else
                 {
                     sql = " INSERT INTO StockZapateria(cantidad, precio, nombre, material , usoRecomendado) VALUES(@cantidad, @precio, @nombre, @material, @usoRecomendado);";
-                    todoOk = calzado.ComandoSQL(sql, AccesoDatos.conexion, AccesoDatos.comando);
+                    retorno = calzado.ComandoSQL(sql, AccesoDatos.conexion, AccesoDatos.comando);
+                
                 }
-
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                todoOk = false;
+                retorno = false;
             }
 
-            return todoOk;
+            return retorno;
         }
 
         #endregion
 
         #region Modificar Calzado
+        /// <summary>
+        /// hace un update de un calzado en la base de datos
+        /// </summary>
+        /// <param name="calzado"></param>
+        /// <returns></returns>
         public static bool ModificarCalzado(Calzado calzado)
         {
-            bool todoOk = false;
-
+            bool retorno;
             string sql;
 
             try
             {
+                AccesoDatos.comando = new SqlCommand();
+                AccesoDatos.comando.CommandType = CommandType.Text;
+                AccesoDatos.comando.Connection = AccesoDatos.conexion;
+
                 if (calzado is Zapato)
                 {
                     sql = " UPDATE StockZapateria SET cantidad = @cantidad, precio = @precio, " +
                         "nombre = @nombre, material = @material, tipoDeTaco = @tipoDeTaco WHERE id = @id";
-                    todoOk = calzado.ComandoSQL(sql, AccesoDatos.conexion, AccesoDatos.comando);
+                    
+                    AccesoDatos.comando.Parameters.AddWithValue("@id", calzado.Id);
+                    retorno = calzado.ComandoSQL(sql, AccesoDatos.conexion, AccesoDatos.comando);
                 }
                 else
                 {
                     sql = " UPDATE StockZapateria SET cantidad = @cantidad, precio = @precio, " +
                         "nombre = @nombre, material = @material, usoRecomendado = @usoRecomendado WHERE id = @id";
-                    todoOk = calzado.ComandoSQL(sql, AccesoDatos.conexion, AccesoDatos.comando);
+                    
+                    AccesoDatos.comando.Parameters.AddWithValue("@id", calzado.Id);
+                    retorno = calzado.ComandoSQL(sql, AccesoDatos.conexion, AccesoDatos.comando);
                 }
+                retorno = true;
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                Console.WriteLine(e.Message);//Error de syntaxis
-                todoOk = false;
+                retorno = false;
             }
 
-            return todoOk;
+            return retorno;
         }
 
         #endregion
 
         #region Eliminar Calzado
+        /// <summary>
+        /// hace un delete de un calzado
+        /// </summary>
+        /// <param name="calzado"></param>
+        /// <returns></returns>
         public static bool EliminarCalzado(Calzado calzado)
         {
-            bool todoOk = false;
+            bool retorno = false;
 
             string sql = "DELETE FROM StockZapateria WHERE id = @id";
 
@@ -247,11 +266,7 @@ namespace Archivos
                 AccesoDatos.conexion.Open();
                 AccesoDatos.comando.ExecuteNonQuery();
 
-                todoOk = true;
-            }
-            catch (Exception)
-            {
-                todoOk = false;
+                retorno = true;
             }
             finally
             {
@@ -261,16 +276,11 @@ namespace Archivos
                 }
             }
 
-            return todoOk;
+            return retorno;
         }
 
         #endregion
 
         #endregion
-
-
-
-
-
     }
 }

@@ -5,21 +5,32 @@ using System.Text;
 using System.Threading.Tasks;
 using Excepciones;
 using System.IO;
+using MetodosDeExtension;
 
 namespace Archivos
 {
     public class Texto : IArchivo<string>
     {
         /// <summary>
+        /// USA ARCHIVOS DE TEXTO
         /// Implenetacion de la interfaz para guardar un archivo, en este caso, de texto
         /// </summary>
         /// <param name="archivo"></param>
-        /// <param name="datos"></param> out donde saldra el string de la lectua del archivo
+        /// <param name="datos"></param> 
         /// <returns></returns> Retorna true si se pudo guardar, de lo contrario, false
         public bool Guardar(string archivo, string datos)
         {
             return this.Guardar(archivo, datos, false);
         }
+
+        /// <summary>
+        /// USA ARCHIVOS DE TEXTO
+        /// guardar un archivo de texto y recibe como parametro el append
+        /// </summary>
+        /// <param name="archivo"></param>
+        /// <param name="datos"></param>
+        /// <param name="append"></param>
+        /// <returns></returns>Retorna true si se pudo guardar, de lo contrario, false
         public bool Guardar(string archivo, string datos, bool append)
         {
             bool retorno = false;
@@ -41,6 +52,7 @@ namespace Archivos
             return retorno;
         }
         /// <summary>
+        /// USA ARCHIVOS DE TEXTO
         /// Lee un archivo de texto en unaruta determinada y lo devuelve como un string
         /// </summary>
         /// <param name="archivo"></param>
@@ -49,20 +61,8 @@ namespace Archivos
         public bool Leer(string archivo, out string datos)
         {
             bool retorno = false;
-            Encoding miCodificacion = Encoding.UTF8;
-
-            try
-            {
-                using (StreamReader streamReader = new StreamReader(archivo, miCodificacion))
-                {
-                    datos = streamReader.ReadToEnd();
-                }
-                retorno = true;
-            }
-            catch (Exception e)
-            {
-                throw new ArchivosException(e);
-            }
+            datos = archivo.LeerArchivo();
+            retorno = true;
 
             return retorno;
         }

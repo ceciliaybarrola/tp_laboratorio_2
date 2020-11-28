@@ -1,0 +1,11 @@
+C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\MetodosDeExtension\bin\Debug\MetodosDeExtension.dll
+C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\MetodosDeExtension\bin\Debug\MetodosDeExtension.pdb
+C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\MetodosDeExtension\bin\Debug\Excepciones.dll
+C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\MetodosDeExtension\bin\Debug\Productos.dll
+C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\MetodosDeExtension\bin\Debug\Excepciones.pdb
+C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\MetodosDeExtension\bin\Debug\Productos.pdb
+C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\MetodosDeExtension\obj\Debug\MetodosDeExtension.csprojAssemblyReference.cache
+C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\MetodosDeExtension\obj\Debug\MetodosDeExtension.csproj.CoreCompileInputs.cache
+C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\MetodosDeExtension\obj\Debug\MetodosDeExtension.csproj.CopyComplete
+C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\MetodosDeExtension\obj\Debug\MetodosDeExtension.dll
+C:\Users\User1\Desktop\facultad\2do cuatrimestre\laboratorio 2\TrabajoPracticoNro4.YbarrolaCecilia\MetodosDeExtension\obj\Debug\MetodosDeExtension.pdb

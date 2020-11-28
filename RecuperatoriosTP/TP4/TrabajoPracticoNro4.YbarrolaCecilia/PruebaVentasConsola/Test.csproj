@@ -49,5 +49,27 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Archivos\Archivos.csproj">
+      <Project>{d1b4a98a-e163-42fc-9b9e-b5bce990b22b}</Project>
+      <Name>Archivos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Excepciones\Excepciones.csproj">
+      <Project>{6d9b50a1-0819-4cd5-8cda-f7a6e4de079f}</Project>
+      <Name>Excepciones</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MetodosDeExtension\MetodosDeExtension.csproj">
+      <Project>{2e1b3a3d-263c-42d6-a55c-cc44ea76a96d}</Project>
+      <Name>MetodosDeExtension</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocio\Negocio.csproj">
+      <Project>{92fb0cc3-52b6-490e-ac07-c3ef667fa9a9}</Project>
+      <Name>Negocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Productos\Productos.csproj">
+      <Project>{8cdab001-d159-40f6-8f1e-e6f772675d2a}</Project>
+      <Name>Productos</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
