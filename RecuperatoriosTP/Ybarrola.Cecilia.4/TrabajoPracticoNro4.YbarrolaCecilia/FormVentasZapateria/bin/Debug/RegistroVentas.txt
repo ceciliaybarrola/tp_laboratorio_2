@@ -1,0 +1,263 @@
+﻿
+**************** ZAPATERIA Don Armando Shoes ****************
+Fecha de emision 24/11/2020 19:38:16
+Listado de productos:
+ZAPATO
+Nombre del calzado: dadaaaa
+Material: Otro
+Precio por unidad: 3000
+Cantidad: 2
+
+Tipo de taco: Cuña
+
+PRECIO TOTAL ------------> 6000
+**************************************************************************
+
+**************** ZAPATERIA Don Armando Shoes ****************
+Fecha de emision 25/11/2020 10:10:03
+Listado de productos:
+PRECIO TOTAL ------------> 0
+**************************************************************************
+
+**************** ZAPATERIA Don Armando Shoes ****************
+Fecha de emision 25/11/2020 10:10:07
+Listado de productos:
+PRECIO TOTAL ------------> 0
+**************************************************************************
+
+**************** ZAPATERIA Don Armando Shoes ****************
+Fecha de emision 25/11/2020 10:10:07
+Listado de productos:
+PRECIO TOTAL ------------> 0
+**************************************************************************
+
+**************** ZAPATERIA Don Armando Shoes ****************
+Fecha de emision 25/11/2020 10:10:07
+Listado de productos:
+PRECIO TOTAL ------------> 0
+**************************************************************************
+
+**************** ZAPATERIA Don Armando Shoes ****************
+Fecha de emision 25/11/2020 10:10:07
+Listado de productos:
+PRECIO TOTAL ------------> 0
+**************************************************************************
+
+**************** ZAPATERIA Don Armando Shoes ****************
+Fecha de emision 25/11/2020 10:10:08
+Listado de productos:
+PRECIO TOTAL ------------> 0
+**************************************************************************
+
+**************** ZAPATERIA Don Armando Shoes ****************
+Fecha de emision 25/11/2020 10:41:06
+Listado de productos:
+ZAPATILLA
+Nombre del calzado: Adidas
+Material: Tela
+Precio por unidad: 9000
+Cantidad: 1
+
+Uso recomendado segun deporte: UsoCotidiano
+
+PRECIO TOTAL ------------> 9000
+**************************************************************************
+
+**************** ZAPATERIA Don Armando Shoes ****************
+Fecha de emision 25/11/2020 10:41:43
+Listado de productos:
+ZAPATILLA
+Nombre del calzado: Adidas
+Material: Tela
+Precio por unidad: 9000
+Cantidad: 1
+
+Uso recomendado segun deporte: UsoCotidiano
+
+PRECIO TOTAL ------------> 9000
+**************************************************************************
+
+**************** ZAPATERIA Don Armando Shoes ****************
+Fecha de emision 25/11/2020 10:43:12
+Listado de productos:
+ZAPATILLA
+Nombre del calzado: Adidas
+Material: Tela
+Precio por unidad: 9000
+Cantidad: 1
+
+Uso recomendado segun deporte: UsoCotidiano
+
+PRECIO TOTAL ------------> 9000
+**************************************************************************
+
+**************** ZAPATERIA Don Armando Shoes ****************
+Fecha de emision 25/11/2020 10:48:38
+Listado de productos:
+ZAPATILLA
+Nombre del calzado: Adidas
+Material: Tela
+Precio por unidad: 9000
+Cantidad: 1
+
+Uso recomendado segun deporte: UsoCotidiano
+
+PRECIO TOTAL ------------> 9000
+**************************************************************************
+
+**************** ZAPATERIA Don Armando Shoes ****************
+Fecha de emision 25/11/2020 10:50:36
+Listado de productos:
+ZAPATILLA
+Nombre del calzado: Adidas
+Material: Tela
+Precio por unidad: 9000
+Cantidad: 1
+
+Uso recomendado segun deporte: UsoCotidiano
+
+PRECIO TOTAL ------------> 9000
+**************************************************************************
+
+**************** ZAPATERIA Don Armando Shoes ****************
+Fecha de emision 25/11/2020 10:52:22
+Listado de productos:
+ZAPATILLA
+Nombre del calzado: converse
+Material: Gamuza
+Precio por unidad: 7000
+Cantidad: 5
+
+Uso recomendado segun deporte: UsoCotidiano
+
+PRECIO TOTAL ------------> 35000
+**************************************************************************
+
+**************** ZAPATERIA Don Armando Shoes ****************
+Fecha de emision 25/11/2020 11:15:33
+Listado de productos:
+ZAPATO
+Nombre del calzado: Loui vouitton
+Material: EcoCuero
+Precio por unidad: 5000
+Cantidad: 3
+
+Tipo de taco: Stiletto
+
+PRECIO TOTAL ------------> 15000
+**************************************************************************
+
+**************** ZAPATERIA Don Armando Shoes ****************
+Fecha de emision 25/11/2020 15:49:57
+Listado de productos:
+ZAPATILLA
+Nombre del calzado: Adidas
+Material: Tela
+Precio por unidad: 9000
+Cantidad: 1
+
+Uso recomendado segun deporte: UsoCotidiano
+
+PRECIO TOTAL ------------> 9000
+**************************************************************************
+
+**************** ZAPATERIA Don Armando Shoes ****************
+Fecha de emision 27/11/2020 19:15:37
+Listado de productos:
+ZAPATO
+Nombre del calzado: Zara
+Material: Otro
+Precio por unidad: 3000
+Cantidad: 18
+
+Tipo de taco: SinTaco
+
+ZAPATO
+Nombre del calzado: fendy
+Material: Gamuza
+Precio por unidad: 6001
+Cantidad: 2
+
+Tipo de taco: Plataforma
+
+PRECIO TOTAL ------------> 66002
+**************************************************************************
+
+**************** ZAPATERIA Don Armando Shoes ****************
+Fecha de emision 28/11/2020 15:38:24
+Listado de productos:
+ZAPATO
+Nombre del calzado: Super Tacos Altos
+Material: Cuero
+Precio por unidad: 3000
+Cantidad: 2
+
+Tipo de taco: Stiletto
+
+ZAPATO
+Nombre del calzado: zapatos
+Material: Gamuza
+Precio por unidad: 6000
+Cantidad: 1
+
+Tipo de taco: Cuña
+
+PRECIO TOTAL ------------> 12000
+**************************************************************************
+
+**************** ZAPATERIA Don Armando Shoes ****************
+Fecha de emision 3/12/2020 12:34:46
+Listado de productos:
+ZAPATILLA
+Nombre del calzado: Adidas
+Material: Tela
+Precio por unidad: 9000
+Cantidad: 2
+
+Uso recomendado segun deporte: UsoCotidiano
+
+PRECIO TOTAL ------------> 18000
+**************************************************************************
+
+**************** ZAPATERIA Don Armando Shoes ****************
+Fecha de emision 3/12/2020 12:43:57
+Listado de productos:
+ZAPATILLA
+Nombre del calzado: Adidas
+Material: Tela
+Precio por unidad: 9000
+Cantidad: 2
+
+Uso recomendado segun deporte: UsoCotidiano
+
+PRECIO TOTAL ------------> 18000
+**************************************************************************
+
+**************** ZAPATERIA Don Armando Shoes ****************
+Fecha de emision 3/12/2020 19:15:33
+Listado de productos:
+ZAPATILLA
+Nombre del calzado: Nike
+Material: Tela
+Precio por unidad: 3600
+Cantidad: 6
+
+Uso recomendado segun deporte: Crossfit
+
+PRECIO TOTAL ------------> 21600
+**************************************************************************
+
+**************** ZAPATERIA Don Armando Shoes ****************
+Fecha de emision 3/12/2020 19:18:22
+Listado de productos:
+ZAPATILLA
+Nombre del calzado: Nike
+Material: Tela
+Precio por unidad: 3600
+Cantidad: 6
+
+Uso recomendado segun deporte: Crossfit
+
+PRECIO TOTAL ------------> 21600
+**************************************************************************
+
